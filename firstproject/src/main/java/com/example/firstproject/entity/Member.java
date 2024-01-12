@@ -12,14 +12,14 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 @Entity
-public class Article {
-    @Id             //엔티티 대푯값
-    @GeneratedValue //자동 생성기능(숫자가 자동으로 매겨짐)
+public class Member {
+    @Id
+    @GeneratedValue
     private Long id;
 
     @Column
-    private String title;
+    private String email;
 
     @Column
-    private String content;
+    private String password;
 }
